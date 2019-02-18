@@ -6,7 +6,7 @@
   },0000);
 });
 </script>
-<script>
+<-- <script>
   $(function() {
   $('div').addClass("ready");
   var timer = setTimeout(function() {
@@ -14,4 +14,4 @@
   },80000);
 });
 </script>
-
+-->
