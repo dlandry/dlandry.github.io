@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Play Youtube Video On Click 2</title>
+        <title>Play Youtube Video On Click 3</title>
     </head>
     <body>
         <button onclick="myFunction(),myFunction2();return false;">Click me</button>
@@ -20,7 +20,7 @@
                 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
             }
             function myFunction2() {
-                document.getElementById("video").innerHTML = "<div id='player'></div>";
+                document.getElementById("video").innerHTML = "<div id='player2'></div>";
 
                 // 2. This code loads the IFrame Player API code asynchronously.
                 var tag = document.createElement('script');
@@ -33,6 +33,19 @@
             // 3. This function creates an <iframe> (and YouTube player)
             //    after the API code downloads.
             var player;
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    height: '390',
+                    width: '640',
+                    videoId: 'M7lc1UVf-VE',
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+
+            var player2;
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
                     height: '390',
@@ -62,6 +75,7 @@
             }
             function stopVideo() {
                 player.stopVideo();
+                player2/stopVide();
             }
         </script>
     </body>
