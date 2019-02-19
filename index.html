@@ -2,15 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Play Youtube Video On Click 2</title>
+        <title>Play Youtube Video On Click 3</title>
     </head>
     <body>
         <button onclick="myFunction();return false;">Click me</button>
-        <div id="video"></div>
+        <div id="reactor"></div>
+        <div id="talent"></div>
 
         <script>
             function myFunction() {
-                document.getElementById("video").innerHTML = "<div id='player'></div>";
+                document.getElementById("reactor").innerHTML = "<div id='player'></div>";
 
                 // 2. This code loads the IFrame Player API code asynchronously.
                 var tag = document.createElement('script');
@@ -55,7 +56,7 @@
         </script>
         <script>
         function myFunction2() {
-            document.getElementById("video").innerHTML = "<div id='player2'></div>";
+            document.getElementById("talent").innerHTML = "<div id='player2'></div>";
 
             // 2. This code loads the IFrame Player API code asynchronously.
             var tag = document.createElement('script');
