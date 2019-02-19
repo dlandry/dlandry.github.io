@@ -5,11 +5,21 @@
         <title>Play Youtube Video On Click</title>
     </head>
     <body>
-        <button onclick="myFunction();return false;">Click me</button>
+        <button onclick="myFunction(),myFunction2();return false;">Click me</button>
         <div id="video"></div>
 
         <script>
             function myFunction() {
+                document.getElementById("video").innerHTML = "<div id='player'></div>";
+
+                // 2. This code loads the IFrame Player API code asynchronously.
+                var tag = document.createElement('script');
+
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            }
+            function myFunction2() {
                 document.getElementById("video").innerHTML = "<div id='player'></div>";
 
                 // 2. This code loads the IFrame Player API code asynchronously.
@@ -56,4 +66,3 @@
         </script>
     </body>
 </html>
-
