@@ -1,0 +1,15 @@
+1 - only start timer when reactor video starts (for phone, xbox, desktop  browsers that don't auto start the main reactor's video)
+ 
+2 - add buttons to stop both videos, skip forward/backward 10 & 30 seconds (also account for a video being rewinded 'minus' seconds.
+
+3 - add vol controls
+
+4 - Provide different layout options
+
+5 - Add marker file to mark any pauses by reviewer (also maybe allow vol adjustment markers as well to allow reviewer to speak over talent video.
+
+6 - explore making frames adjustable and auto-sizing
+
+7 - adjustable background image
+
+8 - allow start at a specific time (to skip over any explaination on link/sync/etc .. the idea being that the viewer will start the video on youtube, where the reactor will explain about link and sync, and/or metion the 'link in the description' to this tool, so that the viewer doesn't have to listen to any long explainations again and can go directly to the 'meat' of the reaction.
