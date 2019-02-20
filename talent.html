@@ -31,7 +31,9 @@
 //    setTimeout(function(){
       // 4. The API will call this function when the video player is ready.
       function onTalentReady(event) {
-        event.target.playVideo();
+        setTimeout(function(){
+          event.target.playVideo();
+        }, 9000)
       }
 
       // 5. The API calls this function when the player's state changes.
