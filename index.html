@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <body>
-    Hello 3
+    Hello 4
     <br>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-<!--    <iframe src="https://dlandry.github.io/reactor.html"height="400" width="30%"></iframe>
+    <iframe src="https://dlandry.github.io/reactor.html"height="400" width="30%"></iframe>
     <br>
-    <iframe src="https://dlandry.github.io/talent.html"height="400" width="30%"></iframe>
+<!--    <iframe src="https://dlandry.github.io/talent.html"height="400" width="30%"></iframe>
   -->
   <!-- 1. Load DailyMotion API (Javascript) -->
 <script src='https://api.dmcdn.net/all.js'> </script>
@@ -23,12 +23,13 @@
     var VIDEO_ID = "x6f0edz"; //update this via your CMS technique
 
     //Create DM Player instance//
-    var player = DM.player(document.getElementById('player'), {
-    video: VIDEO_ID,
-    width: "30%", height: "400",
-    params: { autoplay: true, mute: true }
-
-
+    setTimeout(function(){
+      var player = DM.player(document.getElementById('player'), {
+        video: VIDEO_ID,
+        width: "30%", height: "400",
+        params: { autoplay: true, mute: true }
+//      }, 165000)
+      }, 5000)
     });
 
     //Handle video ending (seek back to zero time)//
