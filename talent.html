@@ -5,6 +5,9 @@
     <div id="talent"></div>
 
     <script>
+    setTimeout(function(){
+      alert('hello');
+    }, 9000);
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
 
@@ -28,9 +31,6 @@
       }
       // 4. The API will call this function when the video player is ready.
       function onTalentReady(event) {
-        setTimeout(function(){
-          alert('hello');
-        }, 3000);
         event.target.playVideo();
       }
 
