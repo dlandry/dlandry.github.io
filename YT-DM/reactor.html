@@ -37,7 +37,7 @@
       var done = false;
       function onTalentStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 600000);
+          setTimeout(stopVideo, 3600000);
           done = true;
         }
       }
